@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    background-color: #8f57fd;
+    font-family: 'Muli', sans-serif;
+}
+.main {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__title {
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+}
+.input{
+    outline: none;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 20px;
+    width: 70%;
+}
+::placeholder{
+    color: white;
+}

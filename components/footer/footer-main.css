@@ -1,0 +1,31 @@
+.footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #8f57fd;
+}
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    padding-left: 30px;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+@media only screen and (max-width: 600px){
+    .footer{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 106%;
+    }
+    .footer a {
+        padding-bottom: 5px;
+        background: rgba(255,255,255,0.1);
+        width: 90%;
+        text-align: center;
+    }
+}

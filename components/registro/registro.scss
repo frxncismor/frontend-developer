@@ -1,0 +1,74 @@
+// Variables sass
+$blanco: white;
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+.register{
+    // mixin sass
+    @include flex;
+    background: linear-gradient(#21c08b, #ab88ff);
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+    __container{
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid $blanco;
+        border-radius: 40px;
+        color: $blanco;
+        padding: 60px 68px 40px;
+        min-height: 700px;
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        --form{
+            display: flex;
+            flex-direction: column;
+        }
+        --login{
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            // anidamiento sass
+            a {
+                color: $blanco;
+                font-size: 16px;
+                text-decoration: none;
+                :hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.input {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid $blanco;
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+::placeholder{
+    color: $blanco;
+}
+.button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: $blanco;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
